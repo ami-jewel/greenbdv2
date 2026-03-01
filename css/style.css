@@ -473,10 +473,9 @@ font-size:15px;
 /* ===== MOBILE MENU FIX ===== */
 
 .menu-toggle{
-display:none;
-font-size:28px;
+display:block !important;
 color:white;
-cursor:pointer;
+font-size:30px;
 }
 
 @media (max-width:900px){
@@ -508,3 +507,4 @@ display:block;
 }
 
 }
+
