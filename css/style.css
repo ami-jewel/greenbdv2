@@ -470,24 +470,15 @@ margin-bottom:10px;
 font-size:15px;
 }
 
-/* =========================
-   MOBILE MENU (ADD ONLY THIS)
-========================= */
+/* ===== MOBILE MENU FIX ===== */
 
 .menu-toggle{
 display:none;
-flex-direction:column;
-gap:6px;
+font-size:28px;
+color:white;
 cursor:pointer;
 }
 
-.menu-toggle span{
-width:28px;
-height:3px;
-background:white;
-}
-
-/* Mobile Responsive */
 @media (max-width:900px){
 
 .nav-links{
@@ -500,7 +491,7 @@ width:100%;
 text-align:center;
 padding:20px 0;
 display:none;
-z-index:999;
+z-index:9999;
 }
 
 .nav-links.active{
@@ -513,18 +504,6 @@ padding:12px 0;
 }
 
 .menu-toggle{
-display:flex;
-}
-
-/* Mobile dropdown fix */
-.dropdown-content{
-position:static;
-display:none;
-background:#161b22;
-box-shadow:none;
-}
-
-.dropdown.active .dropdown-content{
 display:block;
 }
 
