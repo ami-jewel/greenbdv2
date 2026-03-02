@@ -473,38 +473,36 @@ font-size:15px;
 /* ===== MOBILE MENU FIX ===== */
 
 .menu-toggle{
-display:block !important;
-color:white;
-font-size:30px;
-}
-
-@media (max-width:900px){
-
-.nav-links{
-position:absolute;
-top:70px;
-right:0;
-background:#0d1117;
-flex-direction:column;
-width:100%;
-text-align:center;
-padding:20px 0;
 display:none;
-z-index:9999;
+font-size:28px;
+color:white;
+cursor:pointer;
 }
 
-.nav-links.active{
-display:flex;
-}
-
-.nav-links a{
-display:block;
-padding:12px 0;
-}
+/* MOBILE */
+@media screen and (max-width: 900px){
 
 .menu-toggle{
 display:block;
 }
 
+.nav-links{
+display:none;
+flex-direction:column;
+position:absolute;
+top:70px;
+left:0;
+width:100%;
+background:#0d1117;
+padding:20px 0;
 }
+
+.nav-links.active{
+display:flex;
+}
+}
+}
+
+}
+
 
